@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/img_item_photo"
+            android:layout_below="@id/tv_title"
+            android:layout_width="165dp"
+            android:layout_height="260dp"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/tv_release"
+            android:layout_below="@id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_margin="16dp"
+            android:layout_toRightOf="@id/img_item_photo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Release Date :"/>
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_below="@id/tv_release"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_margin="16dp"
+            android:layout_toRightOf="@id/img_item_photo"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_ratings"
+            android:layout_below="@id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_margin="16dp"
+            android:layout_toRightOf="@id/img_item_photo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Average Rating"/>
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ratings"
+            android:layout_margin="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_toRightOf="@id/img_item_photo"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_overview_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/img_item_photo"
+            android:textSize="18sp"
+            android:text="Overview"/>
+
+        <TextView
+            android:id="@+id/tv_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/tv_overview_title"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_trailer_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/tv_overview"
+            android:textSize="18sp"
+            android:text="Trailer"/>
+
+        <TextView
+            android:id="@+id/tv_trailer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/tv_trailer_title"
+            android:textSize="16sp"
+            android:autoLink="web"
+            />
+
+        <TextView
+            android:id="@+id/tv_review_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/tv_trailer"
+            android:textSize="18sp"
+            android:text="Review"/>
+
+        <TextView
+            android:id="@+id/tv_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/tv_review_title"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>
